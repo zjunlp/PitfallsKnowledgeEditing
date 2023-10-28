@@ -1,0 +1,122 @@
+{
+    "P69":[
+        "{} completed his(her) education at",
+        "{} is an alumnus of",
+        "{} studied at",
+        "{} holds a degree from",
+        "{} attended",
+        "{} is a graduate of",
+        "{} obtained his(her) education at",
+        "{} was a student at",
+        "{} pursued his(her) studies at",
+        "{} received his(her) education at"
+    ],
+    "P276":[
+        "{} can be found in",
+        "The location of {} is",
+        "{} is situated in",
+        "The setting of {} is",
+        "We can find {} in",
+        "{} lies in the region of",
+        "The positioning of {} is in",
+        "The spot for {} is",
+        "Geographically, {} is located in",
+        "The locale of {} is"
+    ],
+    "P279":[
+        "{} is a type of",
+        "{} falls under the category of",
+        "{} can be considered a",
+        "{} belongs to the subcategory of",
+        "{} is an example of",
+        "{} is a specific kind of",
+        "{} is a variation of",
+        "{} is a particular form of",
+        "{} is a member of the",
+        "{} is an instance of"
+    ],
+    "P403":[
+        "The river flowing through {} ultimately empties into",
+        "The watercourse of {} leads to the confluence at",
+        "The water from {} eventually merges with",
+        "Running through {}, the watercourse finally reaches",
+        "The flow of water in {} culminates at the junction of",
+        "The stream of {} connects with the larger body of water at",
+        "The tributary of {} contributes its water at",
+        "The watercourse originating from {} ends up at the mouth of",
+        "The {} waterway joins its larger counterpart at",
+        "The aquatic system of {} concludes at the convergence with"
+    ],
+    "P674":[
+        "The story of {} revolves around characters like",
+        "In {}, the plot is centered on characters such as",
+        "The narrative of {} is driven by engaging characters, including",
+        "{} features an ensemble of characters, with notable ones like",
+        "The world of {} is brought to life by characters like",
+        "In the realm of {}, you'll come across characters such as",
+        "The charm of {} lies in its vibrant cast of characters, including",
+        "Throughout the tale of {}, a variety of characters play significant roles, such as",
+        "The rich character lineup within {} consists of personas like",
+        "The dynamic nature of {} is shaped by its characters, notably ones like"
+    ],
+    "P136":[
+        "{} can be classified under the genre of",
+        "The predominant genre of {} can be categorized as",
+        "One can identify the genre of {} as",
+        "The artistic style of {} falls into the genre of",
+        "The {} piece belongs to the genre of",
+        "{} is a creative work that can be defined under the genre of",
+        "In terms of genre, one can describe {} as",
+        "The genre most associated with {} is",
+        "Within the realm of genres, {} is best characterized as",
+        "{} is primarily classified under the genre of"
+    ],
+    "P166":[
+        "Congratulations to {} for receiving the prestigious award(s) like",
+        "We are proud to announce that {} has been honored with award(s), including",
+        "Celebrating the achievements of {}, who has received distinguished award(s), such as",
+        "Recognizing the outstanding accomplishments of {}, who has been awarded with recognition(s) like",
+        "Showcasing the remarkable feats of {}, who has been bestowed with prestigious award(s), including",
+        "Applauding the extraordinary success of {}, who has received notable award(s), such as",
+        "Commemorating the impressive milestones achieved by {}, awarded with recognition(s) like",
+        "Honoring the exceptional talent of {}, who has been granted prestigious award(s), including",
+        "Acknowledging the incredible contributions of {}, who has received esteemed award(s), such as",
+        "Extending our admiration for {}, who has been awarded with high-profile recognition(s) like"
+    ],
+    "P1411":[
+        "{} was honored with an award nomination for its exceptional work in",
+        "{} garnered an award nomination for its remarkable achievements in",
+        "{} earned an esteemed award nomination in recognition of its outstanding contribution to",
+        "{} received a prestigious award nomination in the category of",
+        "{} was nominated for a distinguished award for its notable work in",
+        "{} obtained an award nomination for its significant accomplishments in",
+        "{} was acknowledged with an award nomination for its extraordinary efforts in",
+        "{} secured a highly respected award nomination for its impressive work in",
+        "{} was selected for an award nomination in appreciation of its exemplary performance in",
+        "{} procured an award nomination for its commendable achievements in"
+    ],
+    "P800":[
+        "{} is renowned for his(her) remarkable work in",
+        "The masterpiece created by {} is",
+        "One of the significant achievements of {} is",
+        "{} gained widespread recognition for his(her) work in",
+        "An essential contribution by {} to his(her) field is",
+        "The groundbreaking work of {} is best known as",
+        "{}'s magnum opus is undoubtedly",
+        "A celebrated piece of work by {} is",
+        "The most influential work produced by {} is",
+        "The impressive body of work by {} includes the seminal piece"
+    ],
+    "P366":[
+        "{} is primarily utilized for purposes like",
+        "The main application of {} can be seen in areas such as",
+        "The main usage of {} includes activities such as",
+        "{} serves its primary purpose in scenarios such as",
+        "The predominant use of {} is evident in cases like",
+        "The primary function of {} is showcased in tasks such as",
+        "{} is commonly employed for purposes such as",
+        "The most frequent use of {} can be observed in situations like",
+        "{} is mainly used for the following purposes:",
+        "The principal purpose of {} involves activities like"
+    ]
+}
