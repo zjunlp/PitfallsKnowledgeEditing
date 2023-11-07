@@ -7,7 +7,8 @@ from typing import Tuple, Union
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+import sys
+sys.path.append('memit/')
 from memit.baselines.ft import FTHyperParams, apply_ft_to_model
 from memit.baselines.mend import MENDHyperParams, MendRewriteExecutor
 from dataset import (
