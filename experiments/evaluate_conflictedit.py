@@ -7,10 +7,11 @@ from typing import Tuple, Union
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
+import sys
+sys.path.append('memit/')
 from memit.baselines.ft import FTHyperParams, apply_ft_to_model
 from memit.baselines.mend import MENDHyperParams, MendRewriteExecutor
-from datasets import (
+from dataset import (
     ConflictEditDataset
 )
 from experiments.py.eval_utils_conflictedit import evaluate_conflictEdit
@@ -40,11 +41,11 @@ def main(
         generation_prompts = json.load(fp)
     
     safe_model_name = model_name.replace("/", "_")
-    if not os.path.exists(f"./{safe_model_name}/conflict_results"):
-        os.makedirs(f"./{safe_model_name}/conflict_results")
+    if not os.path.exists(f"./results/{safe_model_name}/conflict_results"):
+        os.makedirs(f"./results/{safe_model_name}/conflict_results")
     
     params_class, apply_algo = ALG_DICT[alg_name]
-    out_file = f"/{safe_model_name}/conflict_results/{alg_name}_{mode}.json"
+    out_file = f"./results/{safe_model_name}/conflict_results/{alg_name}_{mode}.json"
     # Set algorithm-specific variables
     params_class, apply_algo = ALG_DICT[alg_name]
 
@@ -73,7 +74,7 @@ def main(
                 target_true = edit_2["target_true"],
                 subject = edit_1["subject"]
             )
-    hparams = params_class.from_json(HPARAMS_DIR / alg_name / hparams_fname)
+    hparams = params_class.from_json("memit" / HPARAMS_DIR / alg_name / hparams_fname)
     print(f"Executing {alg_name} with parameters {hparams}")
 
     # Instantiate vanilla model
@@ -337,6 +338,12 @@ if __name__ == "__main__":
         help="Use cached k/v pairs",
     )
     parser.add_argument(
+        "--num_edits",
+        type=int,
+        default=1,
+        help="Number of rewrites to perform simultaneously.",
+    )
+    parser.add_argument(
         "--mode"
     )
     parser.set_defaults(skip_generation_tests=False, conserve_memory=False)
@@ -348,7 +355,6 @@ if __name__ == "__main__":
         args.hparams_fname,
         args.dataset_size_limit,
         args.conserve_memory,
-        dir_name=args.alg_name,
         num_edits=args.num_edits,
         mode=args.mode,
     )

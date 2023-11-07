@@ -21,8 +21,8 @@ debug = 5
 result_dict = {}
 for dataset in datasets:
     for method in methods:
-        if os.path.exists(f"./{RES_DIR}/conflict_results/{method}_{dataset}.json"):
-            with open(f"./{RES_DIR}/conflict_results/{method}_{dataset}.json") as fp:
+        if os.path.exists(f"{RES_DIR}/conflict_results/{method}_{dataset}.json"):
+            with open(f"{RES_DIR}/conflict_results/{method}_{dataset}.json") as fp:
                 data = json.load(fp)
             CS = 0
             CM = 0
@@ -80,10 +80,10 @@ methods = ["FT", "MEND", "ROME", "MEMIT"]
 result_dict = {}
 for dataset in datasets:
     for method in methods:
-        if os.path.exists(f"./{RES_DIR}/round_results/{method}_{dataset}.json"):
-            with open(f"./{RES_DIR}/round_results/{method}_{dataset}.json") as fp:
+        if os.path.exists(f"{RES_DIR}/round_results/{method}_{dataset}.json"):
+            with open(f"{RES_DIR}/round_results/{method}_{dataset}.json") as fp:
                 data = json.load(fp)
-            with open(f"./{RES_DIR}/round_results/{dataset}_model.json") as fp:
+            with open(f"{RES_DIR}/round_results/{dataset}_model.json") as fp:
                 model_data = json.load(fp)
             D = 0
             IR = 0
@@ -124,10 +124,10 @@ methods = ["MEMIT"]
 result_dict = {}
 for dataset in datasets:
     for method in methods:
-        if os.path.exists(f"./{RES_DIR}/round_results/{method}_{dataset}_multi.json"):
-            with open(f"./{RES_DIR}/round_results/{method}_{dataset}_multi.json") as fp:
+        if os.path.exists(f"{RES_DIR}/round_results/{method}_{dataset}_multi.json"):
+            with open(f"{RES_DIR}/round_results/{method}_{dataset}_multi.json") as fp:
                 data = json.load(fp)
-            with open(f"./{RES_DIR}/round_results/{dataset}_model.json") as fp:
+            with open(f"{RES_DIR}/round_results/{dataset}_model.json") as fp:
                 model_data = json.load(fp)
             D = 0
             IR = 0

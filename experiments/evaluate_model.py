@@ -7,7 +7,7 @@ from typing import Tuple, Union
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from datasets import (
+from dataset import (
     RoundEditDataset
 )
 from experiments.py.eval_utils_conflictedit import evaluate_roundEdit
@@ -23,10 +23,10 @@ def main(
         generation_prompts = json.load(fp)
     
     safe_model_name = model_name.replace("/", "_")
-    if not os.path.exists(f"./{safe_model_name}/round_results"):
-        os.makedirs(f"./{safe_model_name}/round_results")
+    if not os.path.exists(f"./results/{safe_model_name}/round_results"):
+        os.makedirs(f"./results/{safe_model_name}/round_results")
     
-    out_file = f"/{safe_model_name}/round_results/{mode}_model.json"
+    out_file = f"./results/{safe_model_name}/round_results/{mode}_model.json"
     
     if type(model_name) is str:
         print("Instantiating model")
