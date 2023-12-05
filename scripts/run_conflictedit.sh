@@ -3,4 +3,5 @@ python3 -m experiments.evaluate_conflictedit \
     --model_name=EleutherAI/gpt-j-6B \
     --hparams_fname=EleutherAI_gpt-j-6B.json \
     --dataset_size_limit 2500 \
-    --mode=reverse
+    --mode=reverse \
+    --explicit true

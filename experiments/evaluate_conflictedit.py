@@ -34,7 +34,8 @@ def main(
     dataset_size_limit: int,
     conserve_memory: bool,
     num_edits: int = 1,
-    mode: str = ""
+    mode: str = "",
+    explicit: bool = True,
 ):
     data_dir = "./data/GPT2-XL" if "xl" in model_name.lower() else "./data/GPT-J"
     with open(f"{data_dir}/conflict_prompts.json") as fp:
@@ -50,7 +51,7 @@ def main(
     params_class, apply_algo = ALG_DICT[alg_name]
 
     def cs_post_edit(edit_1, edit_2):
-        if "coverage" in out_file:
+        if explicit or ("coverage" in out_file):
             return dict(
                 prompt = edit_2["prompt"],
                 relation_id = edit_2["relation_id"],
@@ -344,7 +345,12 @@ if __name__ == "__main__":
         help="Number of rewrites to perform simultaneously.",
     )
     parser.add_argument(
-        "--mode"
+        "--mode",
+    )
+    parser.add_argument(
+        "--explicit",
+        type=bool,
+        default=True,
     )
     parser.set_defaults(skip_generation_tests=False, conserve_memory=False)
     args = parser.parse_args()
@@ -357,4 +363,5 @@ if __name__ == "__main__":
         args.conserve_memory,
         num_edits=args.num_edits,
         mode=args.mode,
+        explicit=args.explicit,
     )

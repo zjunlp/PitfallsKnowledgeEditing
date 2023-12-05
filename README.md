@@ -1,6 +1,34 @@
-# Unveiling the Pitfalls of Knowledge Editing for Large Language Models
+<h1 align='center'>Unveiling the Pitfalls of Knowledge Editing for Large Language Models</h1>
 
-![main](img/main.png)
+<p align='center' style="text-align:center;font-size:1.25em;">
+    <b>Zhoubo Li</b><sup>1</sup>&nbsp;,&nbsp;
+    <b>Ningyu Zhang</b><sup>1,*</sup>&nbsp;,&nbsp;
+    <b>Yunzhi Yao</b><sup>1</sup><br>
+    <b>Mengru Wang</b><sup>1</sup>&nbsp;,&nbsp;
+    <b>Xi Chen</b><sup>3</sup>&nbsp;,&nbsp; 
+    <b>Huajun Chen</b><sup>1,2,*</sup>&nbsp;&nbsp;
+    <br/> 
+<sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;<sup>2</sup>Donghai Laboratory&nbsp;&nbsp;&nbsp;<sup>3</sup>Tencent<br> 
+  <sup>*</sup>Corresponding Author<br/>
+</p>
+
+<p align='center' style="text-align:center;font-size:2.5 em;">
+<b>
+    <a href="https://arxiv.org/abs/2310.02129" target="_blank" style="text-decoration: none;">[arXiv]</a>
+</b>
+</p>
+
+---
+
+<div align=center><img src="img/main.png" width="80%" height="80%" alt="main"/></div>
+
+[Knowledge Editing](https://github.com/zjunlp/KnowledgeEditingPapers) provides an efficient way to change the behavior of LLMs without resorting to an exhaustive retraining or continuous training procedure. As the number of edits increases, the model might manifest **Knowledge Conflict** when dealing with inputs involved with multiple consecutive edits. Meanwhile, each edit could potentially lead to ruptures in knowledge links within the model, resulting in **Knowledge Distortion**.
+
+---
+
+![overview](img/overview.png)
+
+**Overview:** (a) Through **Reverse Edit** and **Composite Edit**, we can observe that previous knowledge editing approaches may trigger Knowledge Conflict, leading to failures of knowledge editing; (b) Through **Round-Edit**, we notice that previous knowledge editing approaches may lead to Knowledge Distortion, and the underlying knowledge structure within LLMs can be disrupted.
 
 ## Table of Contents
 
@@ -8,6 +36,7 @@
 - [Dataset Format](#dataset-format)
 - [Evaluation](#evaluation)
 - [Summerization](#summerization)
+- [Experimental Results](#experimental-results)
 - [How to Cite](#how-to-cite)
 
 ## Installation
@@ -18,7 +47,7 @@ conda create -n EditLLMs python=3.9.7
 pip install -r requirements.txt
 ```
 
-**Note:** We recommend `conda` for managing Python, CUDA, and PyTorch.
+**Note:** We recommend `conda` for managing Python, CUDA, and PyTorch=1.12.1.
 
 ## Dataset Format
 
@@ -122,7 +151,7 @@ bash run_MLE.sh
 The dataset split can be changed by modified the `mode` in each script and also the model type, hyperparameters and editing methods. The experimental results are written in `./{ModelName}/round_results/`
 
 
-**Note:** We train MEND on our datasets and **the checkpoints will be released in the future**.
+**Note:** We train MEND on our datasets and the checkpoints are available in [Google Drive](https://drive.google.com/drive/folders/1D9kQDY6DkBAJPM85nv1ancwqmaBvVkvY?usp=sharing).
 
 ## Summerization
 
@@ -131,6 +160,16 @@ To summarize the results, you can use [`experiments/summarize.py`](experiments/s
 ```bash
 python3 -m experiments.summarize --res_dir=GPT-J
 ```
+
+## Experimental Results
+
+### Knowledge Conflict
+
+![KnowledgeConflict](img/knowledge_conflict_results.png)
+
+### Knowledge Distortion
+
+<div align=center><img src="img/knowledge_distortion_results.png" width="85%" height="85%" alt="KnowledgeDistortion"/></div>
 
 ## How to Cite
 
