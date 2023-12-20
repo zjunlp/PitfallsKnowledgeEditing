@@ -1,22 +1,7 @@
-<h1 align='center'>Unveiling the Pitfalls of Knowledge Editing for Large Language Models</h1>
+<h1 align='center'>Pitfalls of Editing LLMs</h1>
 
-<p align='center' style="text-align:center;font-size:1.25em;">
-    <b>Zhoubo Li</b><sup>1</sup>&nbsp;,&nbsp;
-    <b>Ningyu Zhang</b><sup>1,*</sup>&nbsp;,&nbsp;
-    <b>Yunzhi Yao</b><sup>1</sup><br>
-    <b>Mengru Wang</b><sup>1</sup>&nbsp;,&nbsp;
-    <b>Xi Chen</b><sup>3</sup>&nbsp;,&nbsp; 
-    <b>Huajun Chen</b><sup>1,2,*</sup>&nbsp;&nbsp;
-    <br/> 
-<sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;<sup>2</sup>Donghai Laboratory&nbsp;&nbsp;&nbsp;<sup>3</sup>Tencent<br> 
-  <sup>*</sup>Corresponding Author<br/>
-</p>
+Code for the paper: "[Unveiling the Pitfalls of Knowledge Editing for Large Language Models](https://arxiv.org/abs/2310.02129)".
 
-<p align='center' style="text-align:center;font-size:2.5 em;">
-<b>
-    <a href="https://arxiv.org/abs/2310.02129" target="_blank" style="text-decoration: none;">[arXiv]</a>
-</b>
-</p>
 
 ---
 
