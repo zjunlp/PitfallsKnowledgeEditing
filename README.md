@@ -1,6 +1,6 @@
 <h1 align='center'>Pitfalls of Editing LLMs</h1>
 
-Code for the paper: "[Unveiling the Pitfalls of Knowledge Editing for Large Language Models](https://arxiv.org/abs/2310.02129)".
+Code for the ICLR2024 paper: "[Unveiling the Pitfalls of Knowledge Editing for Large Language Models](https://arxiv.org/abs/2310.02129)".
 
 
 ---
