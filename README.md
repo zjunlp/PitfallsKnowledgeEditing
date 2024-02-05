@@ -159,12 +159,10 @@ python3 -m experiments.summarize --res_dir=GPT-J
 ## How to Cite
 
 ```bibtex
-@misc{li2023unveiling,
-      title={Unveiling the Pitfalls of Knowledge Editing for Large Language Models}, 
-      author={Zhoubo Li and Ningyu Zhang and Yunzhi Yao and Mengru Wang and Xi Chen and Huajun Chen},
-      year={2023},
-      eprint={2310.02129},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{li2023unveiling,
+  title={Unveiling the pitfalls of knowledge editing for large language models},
+  author={Li, Zhoubo and Zhang, Ningyu and Yao, Yunzhi and Wang, Mengru and Chen, Xi and Chen, Huajun},
+  journal={arXiv preprint arXiv:2310.02129},
+  year={2023}
 }
 ```
