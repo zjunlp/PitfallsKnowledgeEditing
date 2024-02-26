@@ -14,7 +14,7 @@ from memit.baselines.mend import MENDHyperParams, MendRewriteExecutor
 from dataset import (
     RoundEditDataset
 )
-from experiments.py.eval_utils_conflictedit import evaluate_roundEdit
+from experiments.py.eval_utils_roundedit import evaluate_roundEdit
 from memit.memit import MEMITHyperParams, apply_memit_to_model
 from memit.rome import ROMEHyperParams, apply_rome_to_model
 from memit.util import nethook
