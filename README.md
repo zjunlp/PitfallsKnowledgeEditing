@@ -166,3 +166,7 @@ python3 -m experiments.summarize --res_dir=GPT-J
   year={2023}
 }
 ```
+
+## Acknowledgements
+
+We appreciate [OpenAI GPT4 Service](https://openai.com/gpt-4), [MEMIT](https://github.com/kmeng01/memit), [EasyEdit](https://github.com/zjunlp/EasyEdit) and many other related works for their open-source contributions.

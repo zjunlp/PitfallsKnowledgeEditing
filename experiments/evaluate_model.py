@@ -10,7 +10,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from dataset import (
     RoundEditDataset
 )
-from experiments.py.eval_utils_conflictedit import evaluate_roundEdit
+from experiments.py.eval_utils_roundedit import evaluate_roundEdit
 
 def main(
     model_name: Union[str, Tuple],
